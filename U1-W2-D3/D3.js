@@ -176,6 +176,18 @@ console.log("Esercizio 5:", eyeColor);
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+/*
+let index= 0;
+let crewMass = 0;
+while (index<starWarsCharacters.length) {
+  cosnt character = starWarsCgharacters[index];
+  console.log(crewMass);
+  crew+= character.mass;
+  index++
+} 
+console.log(crewMass);
+  */
+
 let index = 0;
 let crewMass = 0;
 
@@ -200,13 +212,13 @@ console.log("Esercizio 6:Total crew mass:", crewMass);
 console.log(crewMass);
 if (crewMass < 500) {
   console.log("Esercizio 7:Ship is under loaded");
-} else if (crewMass < 500 && crewMass < 700) {
+} else if (crewMass > 500 && crewMass < 700) {
   console.log("Esercizio 7:Ship is half loaded");
-} else if (crewMass < 700 && crewMass < 900) {
+} else if (crewMass > 700 && crewMass < 900) {
   console.log("Esercizio 7:Warning: Load is over 700");
-} else if (crewMass < 900 && crewMass < 1000) {
+} else if (crewMass > 900 && crewMass < 1000) {
   console.log("Esercizio 7:Critical Load: Over 900");
-} else if (crewMass < 1000) {
+} else if (crewMass > 1000) {
   console.log("Esercizio 7:DANGER! OVERLOAD ALERT: escape from ship now!");
 }
 
